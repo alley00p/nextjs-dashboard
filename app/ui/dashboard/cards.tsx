@@ -13,7 +13,20 @@ const iconMap = {
   invoices: InboxIcon,
 };
 
-export default async function CardWrapper() {
+// Add this interface to define the props for the Cards component
+interface CardsProps {
+  totalPaidInvoices: string | number;
+  totalPendingInvoices: string | number;
+  numberOfInvoices: string | number;
+  numberOfCustomers: string | number;
+}
+
+export function Cards({
+  totalPaidInvoices,
+  totalPendingInvoices,
+  numberOfInvoices,
+  numberOfCustomers,
+}: CardsProps) {
   return (
     <>
       <Card title="Collected" value={totalPaidInvoices} type="collected" />

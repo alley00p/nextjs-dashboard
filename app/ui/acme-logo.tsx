@@ -6,7 +6,7 @@ export default function AcmeLogo() {
     <div
       className={`${lusitana.className} flex flex-row items-center leading-none text-white`}
     >
-      <WrenchScrewdriverIcon className="h-12 w-12 rotate-[15deg]" />
+      <WrenchScrewdriverIcon className="h-14 w-14 rotate-[15deg]" />
       <p className="text-[44px]">BoxBox</p>
     </div>
   );
